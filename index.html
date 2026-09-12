@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Walnix Interactive</title>
+<meta name="description" content="Walnix Interactive Inc. — contract software development and data visualization design &amp; research. Calgary, Alberta." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: #17203A;
+    color: #EEF0F6;
+    font-family: Archivo, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .rule { height: 14px; background: #C4553A; }
+  .field {
+    position: relative;
+    min-height: calc(100vh - 14px);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  .dots {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(160,178,228,0.45) 1.4px, transparent 1.4px);
+    background-size: 26px 26px;
+    -webkit-mask-image: radial-gradient(115% 90% at 100% 0%, #000 0%, rgba(0,0,0,0.45) 38%, transparent 75%);
+    mask-image: radial-gradient(115% 90% at 100% 0%, #000 0%, rgba(0,0,0,0.45) 38%, transparent 75%);
+    pointer-events: none;
+  }
+  main {
+    position: relative;
+    width: 100%;
+    max-width: 720px;
+    padding: clamp(40px, 8vh, 88px) clamp(24px, 6vw, 56px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 64px;
+  }
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #93A0C2;
+  }
+  h1 {
+    margin: 0;
+    font-weight: 800;
+    font-size: clamp(48px, 12vw, 92px);
+    line-height: 0.85;
+    letter-spacing: -0.045em;
+  }
+  .head { display: flex; flex-direction: column; gap: 24px; }
+  .foot { display: flex; flex-direction: column; gap: 26px; }
+  .services {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: clamp(16px, 2.4vw, 19px);
+    line-height: 1.45;
+    color: #D3D9E8;
+  }
+  .hr { height: 1px; background: #2E3A5C; }
+  .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+  }
+  .people { display: flex; flex-direction: column; gap: 10px; }
+  a { text-decoration: none; }
+  .people a { color: #EEF0F6; }
+  .people a:hover, .people a:focus { color: #E0836A; }
+  .email { color: #E0836A; }
+  .email:hover, .email:focus { color: #EEF0F6; }
+</style>
+</head>
+<body>
+  <div class="rule"></div>
+  <div class="field">
+    <div class="dots" aria-hidden="true"></div>
+    <main>
+      <div class="head">
+        <span class="eyebrow">Calgary, Alberta</span>
+        <h1>Walnix<br />Inter&shy;active</h1>
+      </div>
+      <div class="foot">
+        <div class="services">
+          <span>Contract software development</span>
+          <span>Data visualization design &amp; research</span>
+        </div>
+        <div class="hr"></div>
+        <div class="links">
+          <div class="people">
+            <a href="https://www.linkedin.com/in/simonnix/" target="_blank" rel="noopener">Simon Nix ↗</a>
+            <a href="https://www.linkedin.com/in/jagoda/" target="_blank" rel="noopener">Jagoda Walny ↗</a>
+          </div>
+          <a class="email" href="mailto:hello@walnix.ca">hello@walnix.ca</a>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
